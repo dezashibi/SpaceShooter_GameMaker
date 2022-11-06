@@ -4,7 +4,7 @@ image_angle = _mouse_direction;
 
 // check if ship should run based on right click
 // movement code by mouse right click
-var _thrust = mouse_check_button(mb_right);
+var _thrust = mouse_check_button(mb_right) or keyboard_check(ord("A"));
 image_index = _thrust; // true or false are actually 1 or 0
 
 if (_thrust) 
@@ -31,7 +31,7 @@ else
 	friction = friction_amount;
 }
 
-var _fire_laser = mouse_check_button_pressed(mb_left);
+var _fire_laser = mouse_check_button_pressed(mb_left) or keyboard_check_pressed(ord("S"));
 
 if (_fire_laser)
 {
