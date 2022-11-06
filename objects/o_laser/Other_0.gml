@@ -1,0 +1,1 @@
+instance_destroy(); // to save resources

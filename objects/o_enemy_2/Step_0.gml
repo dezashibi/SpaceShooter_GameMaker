@@ -1,0 +1,1 @@
+move_enemy(acceleration, max_speed);
